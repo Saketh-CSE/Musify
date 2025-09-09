@@ -44,33 +44,14 @@
                         <i class="fas fa-plus nav-icon"></i>
                         <span class="nav-text">Create Playlist</span>
                     </a>
-                    <a href="#" class="nav-item">
+                    <a href="#" class="nav-item" id="liked-songs-nav">
                         <i class="fas fa-heart nav-icon"></i>
                         <span class="nav-text">Liked Songs</span>
                     </a>
                 </div>
                 
                 <div class="playlists">
-                    <div class="playlist-item" data-playlist="0">
-                        <i class="fas fa-music"></i>
-                        My Playlist #1
-                    </div>
-                    <div class="playlist-item" data-playlist="1">
-                        <i class="fas fa-car"></i>
-                        Road Trip Mix
-                    </div>
-                    <div class="playlist-item" data-playlist="2">
-                        <i class="fas fa-leaf"></i>
-                        Chill Vibes
-                    </div>
-                    <div class="playlist-item" data-playlist="3">
-                        <i class="fas fa-dumbbell"></i>
-                        Workout Hits
-                    </div>
-                    <div class="playlist-item" data-playlist="4">
-                        <i class="fas fa-star"></i>
-                        Indie Discoveries
-                    </div>
+                    <!-- Playlists will be dynamically generated here -->
                 </div>
             </nav>
         </aside>
@@ -79,10 +60,10 @@
         <main class="main-content">
             <header class="top-bar">
                 <div class="nav-buttons">
-                    <button class="nav-btn" id="back-btn">
+                    <button class="nav-btn" id="back-btn" disabled>
                         <i class="fas fa-chevron-left"></i>
                     </button>
-                    <button class="nav-btn" id="forward-btn">
+                    <button class="nav-btn" id="forward-btn" disabled>
                         <i class="fas fa-chevron-right"></i>
                     </button>
                 </div>
@@ -115,34 +96,7 @@
                 </div>
 
                 <div class="quick-picks">
-                    <div class="quick-pick-item" data-song="0">
-                        <img src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da849d25907759522a25b86a3033" alt="Liked Songs">
-                        <span>Liked Songs</span>
-                        <button class="play-btn">
-                            <i class="fas fa-play"></i>
-                        </button>
-                    </div>
-                    <div class="quick-pick-item" data-song="1">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQqLNPh1j9awucIED8ExyqR6FBGsTZpqTWtJg&s" alt="Recently Played">
-                        <span>Recently Played</span>
-                        <button class="play-btn">
-                            <i class="fas fa-play"></i>
-                        </button>
-                    </div>
-                    <div class="quick-pick-item" data-song="2">
-                        <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Discover Weekly">
-                        <span>Discover Weekly</span>
-                        <button class="play-btn">
-                            <i class="fas fa-play"></i>
-                        </button>
-                    </div>
-                    <div class="quick-pick-item" data-song="3">
-                        <img src="https://images.pexels.com/photos/1047442/pexels-photo-1047442.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Release Radar">
-                        <span>Release Radar</span>
-                        <button class="play-btn">
-                            <i class="fas fa-play"></i>
-                        </button>
-                    </div>
+                    <!-- Quick picks will be dynamically generated here -->
                 </div>
 
                 <section class="content-row">
@@ -150,117 +104,8 @@
                         <h2>Recently played</h2>
                         <button class="show-all-btn">Show all</button>
                     </div>
-                    <div class="card-grid">
-                        <div class="music-card" data-song="0">
-                            <div class="card-image">
-                                <img src="https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Album Art">
-                                <div class="card-overlay">
-                                    <button class="card-play-btn">
-                                        <i class="fas fa-play"></i>
-                                    </button>
-                                </div>
-                                <div class="card-actions">
-                                    <button class="action-btn like-btn">
-                                        <i class="far fa-heart"></i>
-                                    </button>
-                                    <button class="action-btn more-btn">
-                                        <i class="fas fa-ellipsis-h"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h3>Midnight Drive</h3>
-                                <p>Synthwave Collection</p>
-                            </div>
-                        </div>
-                        <div class="music-card" data-song="1">
-                            <div class="card-image">
-                                <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Album Art">
-                                <div class="card-overlay">
-                                    <button class="card-play-btn">
-                                        <i class="fas fa-play"></i>
-                                    </button>
-                                </div>
-                                <div class="card-actions">
-                                    <button class="action-btn like-btn">
-                                        <i class="far fa-heart"></i>
-                                    </button>
-                                    <button class="action-btn more-btn">
-                                        <i class="fas fa-ellipsis-h"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h3>Ocean Waves</h3>
-                                <p>Ambient Sounds</p>
-                            </div>
-                        </div>
-                        <div class="music-card" data-song="2">
-                            <div class="card-image">
-                                <img src="https://images.pexels.com/photos/1047442/pexels-photo-1047442.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Album Art">
-                                <div class="card-overlay">
-                                    <button class="card-play-btn">
-                                        <i class="fas fa-play"></i>
-                                    </button>
-                                </div>
-                                <div class="card-actions">
-                                    <button class="action-btn like-btn">
-                                        <i class="far fa-heart"></i>
-                                    </button>
-                                    <button class="action-btn more-btn">
-                                        <i class="fas fa-ellipsis-h"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h3>Electric Dreams</h3>
-                                <p>Electronic Beats</p>
-                            </div>
-                        </div>
-                        <div class="music-card" data-song="3">
-                            <div class="card-image">
-                                <img src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Album Art">
-                                <div class="card-overlay">
-                                    <button class="card-play-btn">
-                                        <i class="fas fa-play"></i>
-                                    </button>
-                                </div>
-                                <div class="card-actions">
-                                    <button class="action-btn like-btn">
-                                        <i class="far fa-heart"></i>
-                                    </button>
-                                    <button class="action-btn more-btn">
-                                        <i class="fas fa-ellipsis-h"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h3>Golden Hour</h3>
-                                <p>Indie Folk Mix</p>
-                            </div>
-                        </div>
-                        <div class="music-card" data-song="4">
-                            <div class="card-image">
-                                <img src="https://images.pexels.com/photos/1190297/pexels-photo-1190297.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Album Art">
-                                <div class="card-overlay">
-                                    <button class="card-play-btn">
-                                        <i class="fas fa-play"></i>
-                                    </button>
-                                </div>
-                                <div class="card-actions">
-                                    <button class="action-btn like-btn">
-                                        <i class="far fa-heart"></i>
-                                    </button>
-                                    <button class="action-btn more-btn">
-                                        <i class="fas fa-ellipsis-h"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h3>Urban Nights</h3>
-                                <p>Hip-Hop Essentials</p>
-                            </div>
-                        </div>
+                    <div class="card-grid" id="recently-played-grid">
+                        <!-- Recently played cards will be dynamically generated here -->
                     </div>
                 </section>
 
@@ -269,73 +114,8 @@
                         <h2>Made for you</h2>
                         <button class="show-all-btn">Show all</button>
                     </div>
-                    <div class="card-grid">
-                        <div class="music-card" data-song="5">
-                            <div class="card-image">
-                                <img src="https://images.pexels.com/photos/1708936/pexels-photo-1708936.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Album Art">
-                                <div class="card-overlay">
-                                    <button class="card-play-btn">
-                                        <i class="fas fa-play"></i>
-                                    </button>
-                                </div>
-                                <div class="card-actions">
-                                    <button class="action-btn like-btn">
-                                        <i class="far fa-heart"></i>
-                                    </button>
-                                    <button class="action-btn more-btn">
-                                        <i class="fas fa-ellipsis-h"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h3>Daily Mix 1</h3>
-                                <p>Arctic Monkeys, The Strokes and more</p>
-                            </div>
-                        </div>
-                        <div class="music-card" data-song="6">
-                            <div class="card-image">
-                                <img src="https://images.pexels.com/photos/1820563/pexels-photo-1820563.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Album Art">
-                                <div class="card-overlay">
-                                    <button class="card-play-btn">
-                                        <i class="fas fa-play"></i>
-                                    </button>
-                                </div>
-                                <div class="card-actions">
-                                    <button class="action-btn like-btn">
-                                        <i class="far fa-heart"></i>
-                                    </button>
-                                    <button class="action-btn more-btn">
-                                        <i class="fas fa-ellipsis-h"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h3>Daily Mix 2</h3>
-                                <p>Tame Impala, MGMT and more</p>
-                            </div>
-                        </div>
-                        <div class="music-card" data-song="7">
-                            <div class="card-image">
-                                <img src="https://images.pexels.com/photos/1933900/pexels-photo-1933900.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Album Art">
-                                <div class="card-overlay">
-                                    <button class="card-play-btn">
-                                        <i class="fas fa-play"></i>
-                                    </button>
-                                </div>
-                                <div class="card-actions">
-                                    <button class="action-btn like-btn">
-                                        <i class="far fa-heart"></i>
-                                    </button>
-                                    <button class="action-btn more-btn">
-                                        <i class="fas fa-ellipsis-h"></i>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="card-content">
-                                <h3>Discover Weekly</h3>
-                                <p>Your weekly mixtape of fresh music</p>
-                            </div>
-                        </div>
+                    <div class="card-grid" id="made-for-you-grid">
+                        <!-- "Made for you" cards will be dynamically generated here -->
                     </div>
                 </section>
 
@@ -344,43 +124,8 @@
                         <h2>Popular artists</h2>
                         <button class="show-all-btn">Show all</button>
                     </div>
-                    <div class="artist-grid">
-                        <div class="artist-card">
-                            <div class="artist-image">
-                                <img src="https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Artist">
-                                <button class="artist-play-btn">
-                                    <i class="fas fa-play"></i>
-                                </button>
-                            </div>
-                            <div class="artist-info">
-                                <h3>Synthwave Artist</h3>
-                                <p>Artist</p>
-                            </div>
-                        </div>
-                        <div class="artist-card">
-                            <div class="artist-image">
-                                <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Artist">
-                                <button class="artist-play-btn">
-                                    <i class="fas fa-play"></i>
-                                </button>
-                            </div>
-                            <div class="artist-info">
-                                <h3>Ambient Collective</h3>
-                                <p>Artist</p>
-                            </div>
-                        </div>
-                        <div class="artist-card">
-                            <div class="artist-image">
-                                <img src="https://images.pexels.com/photos/1047442/pexels-photo-1047442.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Artist">
-                                <button class="artist-play-btn">
-                                    <i class="fas fa-play"></i>
-                                </button>
-                            </div>
-                            <div class="artist-info">
-                                <h3>Electronic Beats</h3>
-                                <p>Artist</p>
-                            </div>
-                        </div>
+                    <div class="artist-grid" id="popular-artists-grid">
+                        <!-- Popular artists will be dynamically generated here -->
                     </div>
                 </section>
             </div>
@@ -388,33 +133,35 @@
             <!-- Search Section -->
             <div class="content-section" id="search-section">
                 <div class="search-content">
-                    <h1>Search</h1>
-                    <div class="browse-categories">
-                        <h2>Browse all</h2>
-                        <div class="category-grid">
-                            <div class="category-card" style="background: linear-gradient(135deg, #1DB954, #1ed760);" data-category="pop">
-                                <h3>Pop</h3>
-                                <i class="fas fa-star category-icon"></i>
-                            </div>
-                            <div class="category-card" style="background: linear-gradient(135deg, #ff6b6b, #ee5a5a);" data-category="rock">
-                                <h3>Rock</h3>
-                                <i class="fas fa-guitar category-icon"></i>
-                            </div>
-                            <div class="category-card" style="background: linear-gradient(135deg, #4ecdc4, #44a08d);" data-category="hip-hop">
-                                <h3>Hip-Hop</h3>
-                                <i class="fas fa-microphone category-icon"></i>
-                            </div>
-                            <div class="category-card" style="background: linear-gradient(135deg, #a8edea, #fed6e3);" data-category="electronic">
-                                <h3>Electronic</h3>
-                                <i class="fas fa-bolt category-icon"></i>
-                            </div>
-                            <div class="category-card" style="background: linear-gradient(135deg, #ffd89b, #19547b);" data-category="jazz">
-                                <h3>Jazz</h3>
-                                <i class="fas fa-saxophone category-icon"></i>
-                            </div>
-                            <div class="category-card" style="background: linear-gradient(135deg, #667eea, #764ba2);" data-category="classical">
-                                <h3>Classical</h3>
-                                <i class="fas fa-music category-icon"></i>
+                    <div id="search-default-view">
+                        <h1>Search</h1>
+                        <div class="browse-categories">
+                            <h2>Browse all</h2>
+                            <div class="category-grid">
+                                <div class="category-card" style="background: linear-gradient(135deg, #1DB954, #1ed760);" data-category="pop">
+                                    <h3>Pop</h3>
+                                    <i class="fas fa-star category-icon"></i>
+                                </div>
+                                <div class="category-card" style="background: linear-gradient(135deg, #ff6b6b, #ee5a5a);" data-category="rock">
+                                    <h3>Rock</h3>
+                                    <i class="fas fa-guitar category-icon"></i>
+                                </div>
+                                <div class="category-card" style="background: linear-gradient(135deg, #4ecdc4, #44a08d);" data-category="hip-hop">
+                                    <h3>Hip-Hop</h3>
+                                    <i class="fas fa-microphone category-icon"></i>
+                                </div>
+                                <div class="category-card" style="background: linear-gradient(135deg, #a8edea, #fed6e3);" data-category="electronic">
+                                    <h3>Electronic</h3>
+                                    <i class="fas fa-bolt category-icon"></i>
+                                </div>
+                                <div class="category-card" style="background: linear-gradient(135deg, #ffd89b, #19547b);" data-category="jazz">
+                                    <h3>Jazz</h3>
+                                    <i class="fas fa-music-alt category-icon"></i>
+                                </div>
+                                <div class="category-card" style="background: linear-gradient(135deg, #667eea, #764ba2);" data-category="classical">
+                                    <h3>Classical</h3>
+                                    <i class="fas fa-music category-icon"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -437,65 +184,43 @@
                         <button class="library-btn">
                             <i class="fas fa-sort"></i>
                         </button>
-                        <button class="create-playlist-btn">
-                            <i class="fas fa-plus"></i>
-                        </button>
                     </div>
                 </div>
                 <div class="library-content">
                     <div class="library-tabs">
-                        <button class="lib-tab active">Recently Added</button>
-                        <button class="lib-tab">Artists</button>
-                        <button class="lib-tab">Albums</button>
-                        <button class="lib-tab">Playlists</button>
+                        <button class="lib-tab active" data-tab="playlists">Playlists</button>
+                        <button class="lib-tab" data-tab="artists">Artists</button>
+                        <button class="lib-tab" data-tab="albums">Albums</button>
                     </div>
-                    <div class="library-list">
-                        <div class="library-item" data-song="0">
-                            <img src="https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&w=80" alt="Album">
-                            <div class="library-info">
-                                <h4>Midnight Drive</h4>
-                                <p>Playlist • 42 songs</p>
-                            </div>
-                            <div class="library-actions">
-                                <button class="library-action-btn">
-                                    <i class="fas fa-play"></i>
-                                </button>
-                                <button class="library-action-btn">
-                                    <i class="fas fa-ellipsis-h"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="library-item" data-song="1">
-                            <img src="https://images.pexels.com/photos/1105666/pexels-photo-1105666.jpeg?auto=compress&cs=tinysrgb&w=80" alt="Album">
-                            <div class="library-info">
-                                <h4>Ocean Waves</h4>
-                                <p>Album • Ambient Sounds</p>
-                            </div>
-                            <div class="library-actions">
-                                <button class="library-action-btn">
-                                    <i class="fas fa-play"></i>
-                                </button>
-                                <button class="library-action-btn">
-                                    <i class="fas fa-ellipsis-h"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="library-item" data-song="2">
-                            <img src="https://images.pexels.com/photos/1047442/pexels-photo-1047442.jpeg?auto=compress&cs=tinysrgb&w=80" alt="Album">
-                            <div class="library-info">
-                                <h4>Electric Dreams</h4>
-                                <p>Playlist • 28 songs</p>
-                            </div>
-                            <div class="library-actions">
-                                <button class="library-action-btn">
-                                    <i class="fas fa-play"></i>
-                                </button>
-                                <button class="library-action-btn">
-                                    <i class="fas fa-ellipsis-h"></i>
-                                </button>
-                            </div>
-                        </div>
+                    <div class="library-list" id="library-list">
+                        <!-- Library items will be dynamically generated here -->
                     </div>
+                </div>
+            </div>
+             <!-- Liked Songs Section -->
+            <div class="content-section" id="liked-songs-section">
+                <div class="playlist-header">
+                    <img src="https://t.scdn.co/images/3099b3803ad9496896c43f2219413bb4.png" alt="Liked Songs" class="playlist-image">
+                    <div class="playlist-details">
+                        <p class="playlist-type">PLAYLIST</p>
+                        <h1 class="playlist-title">Liked Songs</h1>
+                        <p class="playlist-meta"><span id="liked-songs-count">0</span> songs</p>
+                    </div>
+                </div>
+                <div class="playlist-controls">
+                    <button class="control-btn play-pause-btn" id="play-liked-songs-btn">
+                        <i class="fas fa-play"></i>
+                    </button>
+                </div>
+                <div class="song-list-header">
+                    <div class="song-header-item">#</div>
+                    <div class="song-header-item">Title</div>
+                    <div class="song-header-item">Album</div>
+                    <div class="song-header-item">Date Added</div>
+                    <div class="song-header-item"><i class="far fa-clock"></i></div>
+                </div>
+                <div class="song-list" id="liked-songs-list">
+                    <!-- Liked songs will be dynamically generated here -->
                 </div>
             </div>
         </main>
@@ -503,8 +228,8 @@
         <!-- Music Player -->
         <footer class="music-player">
             <div class="player-left">
-                <div class="current-track-image">
-                    <img src="https://images.pexels.com/photos/1699161/pexels-photo-1699161.jpeg?auto=compress&cs=tinysrgb&w=80" alt="Current Track" id="player-image">
+                <div class="current-track-image" id="player-image-container" style="cursor: pointer;">
+                    <img src="https://placehold.co/80x80/121212/1db954?text=Musify" alt="Current Track" id="player-image">
                     <div class="track-animation">
                         <div class="wave"></div>
                         <div class="wave"></div>
@@ -512,8 +237,8 @@
                     </div>
                 </div>
                 <div class="current-track-info">
-                    <h4 id="player-title">Midnight Drive</h4>
-                    <p id="player-artist">Synthwave Collection</p>
+                    <h4 id="player-title">Welcome to Musify</h4>
+                    <p id="player-artist">Select a song to play</p>
                 </div>
                 <button class="heart-btn" id="player-heart">
                     <i class="far fa-heart"></i>
@@ -542,9 +267,8 @@
                     <span class="time" id="current-time">0:00</span>
                     <div class="progress-bar" id="progress-bar">
                         <div class="progress-fill" id="progress-fill"></div>
-                        <div class="progress-handle" id="progress-handle"></div>
                     </div>
-                    <span class="time" id="total-time">3:45</span>
+                    <span class="time" id="total-time">0:00</span>
                 </div>
             </div>
 
@@ -561,7 +285,6 @@
                     </button>
                     <div class="volume-slider" id="volume-slider">
                         <div class="volume-fill" id="volume-fill"></div>
-                        <div class="volume-handle" id="volume-handle"></div>
                     </div>
                 </div>
                 <button class="control-btn" id="fullscreen-btn">
@@ -571,24 +294,70 @@
         </footer>
     </div>
 
+    <!-- Player Display (Fullscreen View) -->
+    <div class="player-display" id="player-display">
+        <div class="player-display-background" id="display-background"></div>
+        <div class="player-display-content">
+            <button class="player-display-close" id="player-display-close"><i class="fas fa-chevron-down"></i></button>
+            <div class="player-display-art">
+                <img src="" alt="Album Art" id="display-art-image">
+            </div>
+            <div class="player-display-info">
+                <h2 id="display-title">Song Title</h2>
+                <p id="display-artist">Artist Name</p>
+            </div>
+            <div class="player-display-controls">
+                <div class="progress-container">
+                    <span class="time" id="display-current-time">0:00</span>
+                    <div class="progress-bar" id="display-progress-bar">
+                        <div class="progress-fill" id="display-progress-fill"></div>
+                    </div>
+                    <span class="time" id="display-total-time">0:00</span>
+                </div>
+                <div class="player-controls">
+                    <button class="control-btn" id="display-shuffle-btn">
+                        <i class="fas fa-random"></i>
+                    </button>
+                    <button class="control-btn" id="display-prev-btn">
+                        <i class="fas fa-step-backward"></i>
+                    </button>
+                    <button class="control-btn play-pause-btn" id="display-play-pause-btn">
+                        <i class="fas fa-play"></i>
+                    </button>
+                    <button class="control-btn" id="display-next-btn">
+                        <i class="fas fa-step-forward"></i>
+                    </button>
+                    <button class="control-btn" id="display-repeat-btn">
+                        <i class="fas fa-redo"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <!-- Audio element for actual playback -->
     <audio id="audio-player" preload="metadata"></audio>
 
     <!-- Context Menu -->
     <div class="context-menu" id="context-menu">
-        <div class="context-item">
+        <div class="context-item" data-action="play">
             <i class="fas fa-play"></i>
             Play
         </div>
-        <div class="context-item">
+        <div class="context-item" data-action="add-to-queue">
+            <i class="fas fa-list"></i>
+            Add to queue
+        </div>
+        <div class="context-item" data-action="add-to-playlist">
             <i class="fas fa-plus"></i>
             Add to playlist
         </div>
-        <div class="context-item">
-            <i class="fas fa-heart"></i>
+        <div class="context-item" data-action="like">
+            <i class="far fa-heart"></i>
             Like
         </div>
-        <div class="context-item">
+        <div class="context-item" data-action="share">
             <i class="fas fa-share"></i>
             Share
         </div>
@@ -611,3 +380,4 @@
     <script src="main.js"></script>
 </body>
 </html>
+
